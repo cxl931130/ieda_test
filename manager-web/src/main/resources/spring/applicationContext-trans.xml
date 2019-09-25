@@ -30,8 +30,5 @@
         </tx:attributes>
     </tx:advice>
     <!-- 切面 -->
-    <aop:config>
-        <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* cn.e3mall.service..*.*(..))" />
-    </aop:config>
+
 </beans>

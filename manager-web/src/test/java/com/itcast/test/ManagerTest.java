@@ -26,8 +26,8 @@ public class ManagerTest {
     @Test
     public void insertUserTest(){
         Users users=new Users();
-        users.setUsername("abc");
-        users.setUserage(25);
+        users.setUsername("adc");
+        users.setUserage(26);
         this.usersMapper.insertUser(users);
     }
     @Test
@@ -39,5 +39,7 @@ public class ManagerTest {
                 System.out.println(users.getUserid()+" "+users.getUsername()+" "+users.getUserage());
             }
         }
+        System.out.println(list.size());
+        System.out.println("查询为空");
     }
 }
